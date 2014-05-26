@@ -8,6 +8,10 @@
 $yii=dirname(__FILE__).'/../framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
 
+//set the flags to determine if it is production mode or not
+//we will use ip address to determine the mode type
+$machine_ip = filter_input(INPUT_SERVER, 'REMOTE_ADDR');
+
 //Added IP filters to switch trace and log details based on the environment
 //Assumes that localhost and 127.0.0.1 are development environments
 if ($machine_ip != '127.0.0.1') {
