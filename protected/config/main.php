@@ -52,8 +52,23 @@ return array(
 				'db'=>array(
 						'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 				),
+				// uncomment the following to use a SQLSRV database
+				/*'db' => array(
+					'connectionString' => 'sqlsrv:Server=hostname;Database=db',
+					'username' => 'uname',
+					'password' => 'pwd',
+				),*/
+				// uncomment the following to use a ORacle database
+				/*'db' => array(
+					            'connectionString' => 'oci:dbname=//localhost:1521/orcl',
+					            'username' => 'uname',
+					            'password' => 'pwd',
+					            'charset' => 'utf8',
+					            'enableProfiling' => true,
+					            'enableParamLogging' => true
+					        ),
+					        */
 				// uncomment the following to use a MySQL database
-
 				/* 'db'=>array(
 				 'connectionString' => 'mysql:host=localhost;dbname=testdrive',
 						'emulatePrepare' => true,
